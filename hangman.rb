@@ -98,6 +98,7 @@ class Game
 
 		choice = gets.chomp
 		begin
+			choice = gets.chomp
 			retries ||= 0
 			if choice == "1"
 				new_game
@@ -109,6 +110,7 @@ class Game
 		rescue
 			puts bad_choice_text
 			retry if (retries += 1) < 3
+			puts "Starting new game\n"
 			return 1
 		end
 	end
