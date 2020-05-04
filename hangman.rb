@@ -41,7 +41,7 @@ class Computer
 	end
 
 	def display
-		return "_ " * secret_word.length if correct_letters.empty?
+		return ("_ " * secret_word.length) + "   " + "Incorrect guesses: #{incorrect_letters.join(", ")}" if correct_letters.empty?
 		regex = /[^#{correct_letters.join("")}]/
 		return secret_word.gsub(regex, "_").split("").join(" ") + "   " + "Incorrect guesses: #{incorrect_letters.join(", ")}"
 	end
@@ -96,7 +96,6 @@ class Game
 	def start_game
 		puts game_intro_text
 
-		choice = gets.chomp
 		begin
 			choice = gets.chomp
 			retries ||= 0
@@ -105,7 +104,7 @@ class Game
 			elsif choice == "2"
 				load_game
 			else
-				raise
+				raise error
 			end
 		rescue
 			puts bad_choice_text
