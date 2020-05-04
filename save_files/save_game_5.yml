@@ -1,0 +1,25 @@
+--- !ruby/object:Game
+gamestate: !ruby/object:Computer
+  lives: 4
+  correct_letters:
+  - p
+  - e
+  - c
+  - s
+  - r
+  - i
+  incorrect_letters:
+  - l
+  secret_word: percussion
+  secret_letters:
+  - p
+  - e
+  - r
+  - c
+  - u
+  - s
+  - s
+  - i
+  - o
+  - n
+in_play: true

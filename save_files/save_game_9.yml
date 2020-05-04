@@ -1,0 +1,16 @@
+--- !ruby/object:Game
+gamestate: !ruby/object:Computer
+  lives: 5
+  correct_letters:
+  - f
+  - a
+  incorrect_letters: []
+  secret_word: fawkes
+  secret_letters:
+  - f
+  - a
+  - w
+  - k
+  - e
+  - s
+in_play: true

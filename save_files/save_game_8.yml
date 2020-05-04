@@ -1,0 +1,17 @@
+--- !ruby/object:Game
+gamestate: !ruby/object:Computer
+  lives: 4
+  correct_letters:
+  - c
+  incorrect_letters:
+  - a
+  secret_word: comedic
+  secret_letters:
+  - c
+  - o
+  - m
+  - e
+  - d
+  - i
+  - c
+in_play: true

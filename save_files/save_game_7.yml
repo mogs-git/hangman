@@ -1,0 +1,16 @@
+--- !ruby/object:Game
+gamestate: !ruby/object:Computer
+  lives: 4
+  correct_letters:
+  - l
+  incorrect_letters:
+  - p
+  secret_word: lublin
+  secret_letters:
+  - l
+  - u
+  - b
+  - l
+  - i
+  - n
+in_play: true
