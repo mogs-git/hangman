@@ -35,7 +35,7 @@ class Computer
 		while word.length < 5 || word.length > 12
 			word = words.sample
 		end
-		puts word
+		# puts word
 		file.close
 		return word.downcase
 	end
@@ -169,7 +169,9 @@ class Game
 
 	def game_loop 
 		while gamestate.lives > 0
+			puts
 			puts gamestate.display
+			puts
 			gamestate.play_round self
 			if gamestate.secret_letters.uniq.sort == gamestate.correct_letters.sort
 				puts win_text
